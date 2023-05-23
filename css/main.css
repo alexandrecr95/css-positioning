@@ -82,47 +82,46 @@ footer {
 /* Responsive rules */
 
 /* start positioning styles */
-
 .text-align-center{
-   text-align:center;
-   background-color:aqua;
-}
-
-
-.margin-auto > div{
-   margin:auto;
-   width:50%;
-   background-color:beige;
-   text-align:center;
-}
+    text-align:center;
+    background-color:aqua;
+ }
+ 
+ 
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ } 
 
 /* Allows box to take up full space, ignoring padding/margin */
 * {
-   box-sizing: border-box;
- }
+    box-sizing: border-box;
+  }
+ 
+ 
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
+  @media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+      }
+ } 
 
-/* Create two equal columns that floats next to each other */
-.my-column {
-   float: left;
-   width: 50%;
-   padding: 10px;
-   min-height: 300px; /* Can be removed. Only for demonstration */
- }
-  /* Clear floats after the columns */
- .my-row:after {
-   content: "";
-   display: table;
-   clear: both;
- }
-
-@media all and (max-width:500px) {
-   .my-column {
-       width: 100%;
-     }
-}
-
-.fa {
+ .fa {
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -136,6 +135,7 @@ footer {
    .fa-facebook {
     background: #3B5998;
     color: white;
+    padding: 20px 25px;
   }
    .fa-twitter {
     background: #55ACEE;
@@ -154,20 +154,13 @@ footer {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
- 
+
   .social-container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-    padding: 20px 25px; /*fixes odd egg shape */
- }
- 
-
- /* flexible image rules start here */
+  /* flexible image rules start here */
 
 
 .flexible img{
@@ -183,6 +176,7 @@ footer {
  
  /* flexible image rules end here */
  
+
 /* end positioning styles */
 
 /* DESKTOP */
